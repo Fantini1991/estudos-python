@@ -1,0 +1,29 @@
+# Estudos de Python
+
+Repositório de estudos de programação em Python, com foco em **análise de dados aplicada a química e materiais**.
+
+Sou químico com pós-graduação em Engenharia de Materiais, em transição de carreira para a área de dados. Cada script abaixo resolve um problema típico de laboratório.
+
+## Conteúdo
+
+| Arquivo | Tema | Conceitos |
+|---|---|---|
+| `aula1.py` | Concentração molar e diluição | variáveis, operações, `print` |
+| `aula2.py` | Cálculo interativo | `input()`, conversão com `float()` |
+| `aula3.py` | Controle de qualidade de pH | listas, laço `for`, condicionais `if` |
+| `aula4.py` | Tabelas de medições | pandas, DataFrame, filtros |
+
+## Como executar
+
+Requer Python 3.10 ou superior.
+
+```bash
+pip install pandas
+python aula4.py
+```
+
+## Próximos passos
+
+- Leitura de arquivos CSV e gráficos com matplotlib
+- Estatística aplicada a dados experimentais
+- Projeto final: análise de um conjunto de dados real de materiais
