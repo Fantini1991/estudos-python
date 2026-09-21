@@ -12,6 +12,8 @@ Sou químico com pós-graduação em Engenharia de Materiais, em transição de 
 | `aula2.py` | Cálculo interativo | `input()`, conversão com `float()` |
 | `aula3.py` | Controle de qualidade de pH | listas, laço `for`, condicionais `if` |
 | `aula4.py` | Tabelas de medições | pandas, DataFrame, filtros |
+| `aula5.py` | Leitura de CSV e gráfico | `read_csv`, `groupby`, matplotlib |
+| `revisao1.py` | Temperaturas de um forno | `sum`, `len`, contador, `max` |
 
 ## Exemplo: controle de pH por amostra
 
