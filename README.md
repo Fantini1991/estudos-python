@@ -13,6 +13,10 @@ Sou químico com pós-graduação em Engenharia de Materiais, em transição de 
 | `aula3.py` | Controle de qualidade de pH | listas, laço `for`, condicionais `if` |
 | `aula4.py` | Tabelas de medições | pandas, DataFrame, filtros |
 
+## Exemplo: controle de pH por amostra
+
+![Gráfico de pH](grafico_ph.png)
+
 ## Como executar
 
 Requer Python 3.10 ou superior.
