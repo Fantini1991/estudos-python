@@ -14,6 +14,7 @@ Sou químico com pós-graduação em Engenharia de Materiais, em transição de 
 | `aula4.py` | Tabelas de medições | pandas, DataFrame, filtros |
 | `aula5.py` | Leitura de CSV e gráfico | `read_csv`, `groupby`, matplotlib |
 | `revisao1.py` | Temperaturas de um forno | `sum`, `len`, contador, `max` |
+| `aula6b.py` | Colunas calculadas e classificação | colunas com pandas, `.loc`, condições vetorizadas |
 
 ## Exemplo: controle de pH por amostra
 
