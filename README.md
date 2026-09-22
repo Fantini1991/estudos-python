@@ -17,6 +17,7 @@ Sou químico com pós-graduação em Engenharia de Materiais, em transição de 
 | `aula5.py` | Leitura de CSV e gráfico | `read_csv`, `groupby`, matplotlib |
 | `revisao1.py` | Temperaturas de um forno | `sum`, `len`, contador, `max` |
 | `aula6b.py` | Colunas calculadas e classificação | colunas com pandas, `.loc`, condições vetorizadas |
+| `aula7_sql.py` | Consultas SQL sobre os dados | `sqlite3`, `SELECT`, `WHERE`, `GROUP BY` |
 
 ## Exemplo: controle de pH por amostra
 
@@ -39,6 +40,6 @@ O lote L3 foi o que mais apresentou amostras fora da faixa de pH (2 de 3), contr
 
 ## Próximos passos
 
-- SQL aplicado a análise de dados
+- SQL: `ORDER BY`, `LIMIT`, `JOIN`
 - Estatística inferencial (desvio padrão, testes de hipótese)
 - Projeto com um conjunto de dados real de materiais
