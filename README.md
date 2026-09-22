@@ -31,8 +31,14 @@ pip install pandas
 python aula4.py
 ```
 
+## Conclusão: qual lote merece atenção?
+
+O lote L3 foi o que mais apresentou amostras fora da faixa de pH (2 de 3), contra 1 de cada nos lotes L1 e L2. Esse problema não aparecia na média simples, porque o L3 tinha valores muito baixos e muito altos que se compensavam, resultando numa média (6,10) dentro da faixa aceitável (6,5–7,5). O caso mostra que uma média "normal" não garante que o processo esteja sob controle: é preciso olhar também a dispersão (mínimo e máximo) e a contagem de não conformidades antes de aprovar um lote.
+
+![Amostras fora da faixa por lote](grafico_fora_por_lote.png)
+
 ## Próximos passos
 
-- Leitura de arquivos CSV e gráficos com matplotlib
-- Estatística aplicada a dados experimentais
-- Projeto final: análise de um conjunto de dados real de materiais
+- SQL aplicado a análise de dados
+- Estatística inferencial (desvio padrão, testes de hipótese)
+- Projeto com um conjunto de dados real de materiais
