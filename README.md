@@ -4,6 +4,8 @@ Repositório de estudos de programação em Python, com foco em **análise de da
 
 Sou químico com pós-graduação em Engenharia de Materiais, em transição de carreira para a área de dados. Cada script abaixo resolve um problema típico de laboratório.
 
+📖 [Glossário de referência](GLOSSARIO.md) — comandos de Python, pandas e Git explicados, com exemplos.
+
 ## Conteúdo
 
 | Arquivo | Tema | Conceitos |
