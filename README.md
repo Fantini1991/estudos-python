@@ -4,9 +4,25 @@ Repositório de estudos de programação em Python, com foco em **análise de da
 
 Sou químico com pós-graduação em Engenharia de Materiais, em transição de carreira para a área de dados. Cada script abaixo resolve um problema típico de laboratório.
 
-📖 [Glossário de referência](GLOSSARIO.md) — comandos de Python, pandas e Git explicados, com exemplos.
+📖 [Glossário de referência](GLOSSARIO.md) — comandos de Python, pandas, SQL e Git explicados, com exemplos.
 
-## Conteúdo
+## 🏆 Projeto principal: `analisador.py`
+
+Programa interativo que reúne tudo que aprendi até aqui: funções, pandas e SQL, num menu de linha de comando.
+
+```bash
+python analisador.py
+```
+
+```
+1. Ver tabela
+2. Ver resumo por lote
+3. Gerar gráfico
+4. Consultar com SQL
+0. Sair
+```
+
+## Conteúdo (aulas, em ordem)
 
 | Arquivo | Tema | Conceitos |
 |---|---|---|
@@ -18,6 +34,8 @@ Sou químico com pós-graduação em Engenharia de Materiais, em transição de 
 | `revisao1.py` | Temperaturas de um forno | `sum`, `len`, contador, `max` |
 | `aula6b.py` | Colunas calculadas e classificação | colunas com pandas, `.loc`, condições vetorizadas |
 | `aula7_sql.py` | Consultas SQL sobre os dados | `sqlite3`, `SELECT`, `WHERE`, `GROUP BY` |
+| `aula8_join.py` | Combinando duas tabelas | `JOIN`, `ORDER BY`, `AS` |
+| `analisador.py` | **Projeto final**: menu interativo | funções (`def`), `.apply()`, tudo integrado |
 
 ## Exemplo: controle de pH por amostra
 
@@ -40,6 +58,5 @@ O lote L3 foi o que mais apresentou amostras fora da faixa de pH (2 de 3), contr
 
 ## Próximos passos
 
-- SQL: `ORDER BY`, `LIMIT`, `JOIN`
 - Estatística inferencial (desvio padrão, testes de hipótese)
 - Projeto com um conjunto de dados real de materiais

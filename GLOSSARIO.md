@@ -56,6 +56,26 @@ Guia rápido do que cada comando faz e **quando usar**. Atualizado a cada aula. 
 | `plt.savefig("nome.png")` | Salva o gráfico como imagem | Guardar para usar no README ou relatório | `plt.savefig("grafico.png")` |
 | `plt.show()` | Abre a janela com o gráfico | Ver o gráfico ao rodar o script | — |
 
+## SQL (via sqlite3 + pandas)
+
+| Comando | O que é | Quando usar | Exemplo |
+|---|---|---|---|
+| `import sqlite3` | Carrega a ferramenta de banco de dados SQLite | No topo do script, quando for usar SQL | — |
+| `sqlite3.connect("arquivo.db")` | Abre (ou cria) um banco de dados num arquivo | Antes de qualquer consulta SQL | `conexao = sqlite3.connect("lab.db")` |
+| `tabela.to_sql("nome", conexao, if_exists="replace", index=False)` | Copia um DataFrame para dentro do banco, como uma tabela | Para colocar dados (de um CSV, por exemplo) num banco de verdade | `medicoes.to_sql("medicoes", conexao, if_exists="replace", index=False)` |
+| `pd.read_sql("SQL...", conexao)` | Manda uma consulta SQL e devolve o resultado como DataFrame | Sempre que quiser rodar uma pergunta em SQL | `pd.read_sql("SELECT * FROM medicoes", conexao)` |
+| `SELECT col1, col2 FROM tabela` | Escolhe quais colunas mostrar, de qual tabela | Início de toda consulta | `SELECT amostra, ph FROM medicoes` |
+| `WHERE condicao` | Filtra linhas | Igual ao `if`, mas para SQL. Texto usa aspas **simples** | `WHERE status = 'FORA'` |
+| `GROUP BY coluna` | Agrupa linhas por valor da coluna | Antes de usar `COUNT`, `AVG`, etc | `GROUP BY lote` |
+| `COUNT(*)` / `AVG(col)` | Conta linhas / calcula média, dentro de cada grupo | Junto com `GROUP BY` | `AVG(ph)` |
+| `AS apelido` | Dá um nome novo a uma coluna calculada | Deixar o resultado mais legível | `AVG(ph) AS media_ph` |
+| `ORDER BY coluna DESC` | Ordena o resultado (`DESC` = do maior para o menor) | Quando quer ver do "pior" para o "melhor", ou o inverso | `ORDER BY media_ph DESC` |
+| `LIMIT n` | Mostra só as primeiras `n` linhas | Junto com `ORDER BY`, para pegar só o topo | `LIMIT 3` |
+| `JOIN outra_tabela ON t1.col = t2.col` | Junta duas tabelas, casando pela coluna em comum | Quando o dado que você precisa está espalhado em tabelas diferentes | `JOIN lotes ON medicoes.lote = lotes.lote` |
+| `conexao.close()` | Fecha a conexão com o banco | Ao terminar de usar o banco de dados | — |
+
+**Armadilha comum:** SQL usa aspas **simples** (`'FORA'`) para texto, nunca duplas. E `WHERE`/`ON` sempre precisam de **coluna + operador + valor** juntos — nunca só o valor sozinho.
+
 ## Git / GitHub
 
 | Comando | O que é | Quando usar |
